@@ -12,6 +12,8 @@ Please launch your ipython notebook on webbrowser through this code:
 `ipython notebook --no-browser --ip=0.0.0.0 --pylab inline`
 
 We did some of our data processing in R and created some csv files, so our visualizations are based on the csv files imported. Corresponding R-codes(named as HW2R.R) can be found in this repository.
+To replicate the work done in R, please have R version 3.0 installed. 
+
 
 Due Date
 --------
