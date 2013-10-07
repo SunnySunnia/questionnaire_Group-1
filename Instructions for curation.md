@@ -9,3 +9,5 @@ Instructions
 execute command: source("hw2.R")
 
 4) "At this point the data has been curated and the next step should be followed"
+
+5) For the Analysis, there is a seperate R file 
