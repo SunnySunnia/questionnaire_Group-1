@@ -1,0 +1,18 @@
+Added lines for my analysis:
+
+Northing else changed but if you could add these lines to get a summary of the data:
+
+
+# Summary of colSums
+aggregate
+Output:
+     Visual       Aural  Read_Write Kinesthetic 
+        221         208         214         222 
+
+
+#The breakdown of aggregate numbers
+summary(Diversity)
+Output:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   16.0    22.0    28.0    27.9    35.5    45.0 
+
