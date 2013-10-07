@@ -1,10 +1,9 @@
 
-
 Stat 157 Questionnaire Data Wrangling
 =====================================
 
 <h1>Reproducing the Data</h1>
-Group1-Presentation.ipynb contains the presentation for this project. Inside it has code that cleans the data, analyzes it, and creates visualizations for it. 
+"Group1-Presentation.ipynb" contains the presentation for this project. Inside it has code that cleans the data, analyzes it, and creates visualizations for it. 
 
 Please download extra packages for python:
 sudo apt-get install python-matplotlib
