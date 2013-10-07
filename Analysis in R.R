@@ -1,6 +1,5 @@
-
 # Loaded the Learning File into R
-Learning=readLines("~/questionnaire_Group-1/Learning.txt")
+Learning=readLines("Learning.txt")
 
 #Find ALl Lines With Numbers
 LEA = as.numeric(gsub("[^0-9]*", "", Learning))
@@ -37,7 +36,7 @@ plot(sort(Diversity),col="red",main="Specialists vs. Generalists",type="b",pch=1
 #Conclusion: Equipped for diverse learning environments. While aggregate skills say class is unified, the marginal brakdown suggests this is due to the class coming together. Marginally things look very dispersed, but people can compliment each other and help each other grow and learn.
 
 #Loaded the Preferences File into R
-Preferences=readLines("~/questionnaire_Group-1/personal.txt")
+Preferences=readLines("personal.txt")
 Preferences
 
 #Determine how many people learned from classes/course material rather tahn professional or personal environments
