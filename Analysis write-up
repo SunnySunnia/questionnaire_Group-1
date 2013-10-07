@@ -1,0 +1,14 @@
+Analysis write up
+
+In my analysis, I wanted to accomplish three things:
+1)	What is the total learning aptitude in the class?
+a.	To find the total learning aptitude, I summed the columns of the matrix containing the numerical results (Visual, Aural, etc.) This was not a complete sample of the class but had a sample size of 31 people. I found that the distribution of aggregate aptitudes was distributed uniformly. This suggests the class as a whole has a balance in learning aptitude. The results were:
+i.	    Visual       Aural  Read_Write Kinesthetic 
+ii.	        221         208         214         222 
+2)	What are the marginal learning preferences?
+a.	The story is very different when we look at the marginal learning preferences by student. At the marginal level, students exhibit dramatic differences in total learning aptitude. Those with lower numbers appear to be very specific in how they prefer learning. Their numbers are low due to more specificity in learning environments, whereas the higher levels correspond to more generalized learning environments. Here is a summary of the distribution:
+1.	> summary(Diversity)
+2.	   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+3.	   16.0    22.0    28.0    27.9    35.5    45.0
+3)	How did everyone get to learn the subject?
+a.	To see how people became familiar with the material in this class, I used grep to search for words associated with 1 of three categories: Work, School, and Social. I searched for responses with “internships, work or jobs” and put that in the work category. I searched for responses with “class and course” and placed them in the class category. I searched for responses with “ personal and friends” and put them in the social category. I eliminated crossovers within 1 group (a response with “internship” and “work” would be counted once in the work category. There remains crossovers between groups, but I just wanted to see relative ratios and its perfectly reasonable to say you learned the material in two environments.  Overall, I found 21 put Social, 14 put work, and 10 put class as their primary method of learning the material. There appears a higher concentration in self-motivated study, implying the group as a whole is genuinely interested in the field of collaborative and reproducible data.
