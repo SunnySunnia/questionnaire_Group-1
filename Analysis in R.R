@@ -22,6 +22,8 @@ Skills=data.frame(Visual,Aural,Read_Write,Kinesthetic)
 # Sum the columns to determine aggregate skill levels (sample test of 31 respondents)
 aggregate=colSums(Skills)
 
+write.csv(aggregate,"aggregate.csv")
+
 #Nice little bar plot of the results
 barplot(aggregate,col=c("blue","red","green","purple"),main="Agggregate Skill Sample Size 31",ylim=c(0,250))
 DIstribution of learning styles
@@ -29,10 +31,11 @@ DIstribution of learning styles
 #How Diverse is our class? We examine the marginal distribution of numerical answers by taking the sum of the row
 
 Diversity=rowSums(Skills)
-
+sortDi=sort(Diversity)
 #Nice Plot where I sorted the rowsums and graphed it to see how spread the aggregate numerical answers were at the margin.
+write.csv(sortDi, "sortDi.csv")
 
-plot(sort(Diversity),col="red",main="Specialists vs. Generalists",type="b",pch=18,ylab="Aggregate Numerical Answers",xlab="Students")
+plot(sort(sortDi),col="red",main="Specialists vs. Generalists",type="b",pch=18,ylab="Aggregate Numerical Answers",xlab="Students")
 #Conclusion: Equipped for diverse learning environments. While aggregate skills say class is unified, the marginal brakdown suggests this is due to the class coming together. Marginally things look very dispersed, but people can compliment each other and help each other grow and learn.
 
 #Loaded the Preferences File into R
