@@ -1,7 +1,8 @@
 Stat 157 Questionnaire Data Wrangling
 =====================================
 
-<h1>Reproducing the Data</h1>
+Reproducing the Data
+--------------------
 [Group1-Presentation.ipynb](https://github.com/SunnySunnia/questionnaire_Group-1/blob/master/Group1-Presentation.ipynb) contains the presentation for this project. Inside it has code that cleans the data, analyzes it, and creates visualizations for it. 
 
 Please download extra packages for python:
