@@ -1,4 +1,3 @@
-write.csv(Learning,"learning.csv")
 
 counts=matrix(0,nrow=16,ncol=4)
 for (j in 1:4) {
@@ -10,6 +9,18 @@ rownames(counts)=0:15
 colnames(counts)=c("Visual","Aural","Read_Write","Kinesthetic")
 write.csv(counts,"counts.csv")
 
+####################################################################################
+aggregate=colSums(Learning)
+write.csv(aggregate,"aggregate.csv")
+
+####################################################################################
+
+Diversity=rowSums(Learning)
+sortDi=sort(Diversity)
+write.csv(sortDi, "sortDi.csv")
+
+####################################################################################
+
 type=matrix(0,nrow=31,ncol=1)
 for(i in 1:31){
   type[i,]=which(Learning[i,]==max(Learning[i,]))[sample(which(Learning[i,]==max(Learning[i,])),1)]
@@ -17,6 +28,8 @@ for(i in 1:31){
 
 frac=as.numeric((table(type)/sum(table(type)))*100)
 write.csv(frac,"frac.csv")
+
+######################################################################################
 
 Sum=matrix(0,ncol=2,nrow=6)
 Sum[1,1]="Friends or Family"
