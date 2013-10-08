@@ -5,8 +5,8 @@ Stat 157 Questionnaire Data Wrangling
 [Group1-Presentation.ipynb](https://github.com/SunnySunnia/questionnaire_Group-1/blob/master/Group1-Presentation.ipynb) contains the presentation for this project. Inside it has code that cleans the data, analyzes it, and creates visualizations for it. 
 
 Please download extra packages for python:
-`sudo apt-get install python-matplotlib`
-`sudo apt-get install python-tornado`
+- `sudo apt-get install python-matplotlib`
+- `sudo apt-get install python-tornado`
 
 Please launch your ipython notebook on webbrowser through this code:
 `ipython notebook --no-browser --ip=0.0.0.0 --pylab inline`
